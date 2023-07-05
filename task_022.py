@@ -23,11 +23,13 @@ def check_8_queens(coordinates : list) -> bool:
     return True
 
 
+# функция ввода координат с консоли
 def input_coordinates() -> list:
     return [list(map(int, input(f'Координаты {i + 1} ферзя (x.y): ').split("."))) 
             for i in range(8)]
 
 
+# функция рандомного получения координат
 def random_coordinates() -> list:
     return list(zip(get_list(), get_list()))
 
